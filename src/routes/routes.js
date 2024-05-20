@@ -30,7 +30,9 @@ router.get("/get", async (req, res) => {
     try {
         const data1 = await getWeather(city);
         res.send(data1);
-        // console.log(data1.current.temperature);
+        console.log("dentro do /get");
+        // console.log(data1);
+        return data1;
     } catch (error) {
         res.status(500).send(error.message);
     }
