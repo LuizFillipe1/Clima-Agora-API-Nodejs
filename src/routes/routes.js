@@ -26,14 +26,16 @@ async function getWeather(city) {
 
 router.get("/get", async (req, res) => {
     const city = req.query.city;
+    console.log("adsad")
 
     try {
         const data1 = await getWeather(city);
         res.send(data1);
         console.log("dentro do /get");
-        // console.log(data1);
+        console.log(data1);
         return data1;
     } catch (error) {
+        console.log("adsad")
         res.status(500).send(error.message);
     }
 });
