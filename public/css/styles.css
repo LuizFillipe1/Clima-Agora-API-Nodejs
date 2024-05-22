@@ -84,6 +84,10 @@ body {
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
 }
 
+.tempIcon img {
+  animation: go-back 1.3s infinite alternate;
+}
+
 #temp_value {
   font-weight: bold;
   font-size: 50px;
@@ -149,4 +153,13 @@ body {
 #alert img {
   width: 200px;
   margin-top: 20px;
+}
+
+@keyframes go-back {
+  from {
+    transform: translateX(10px);
+  }
+  to {
+    transform: translateX(-10px);
+  }
 }
