@@ -17,7 +17,6 @@ document.querySelector("#search").addEventListener("submit", async (event) => {
       throw new Error("Network response was not ok");
     }
     const json = await response.json();
-    console.log(json);
     if (json) {
       showInfo({
         city: json.name,
