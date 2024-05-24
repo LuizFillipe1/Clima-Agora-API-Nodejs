@@ -43,6 +43,7 @@ document.querySelector("#search").addEventListener("submit", async (event) => {
 });
 
 function showInfo(json) {
+  isday(json.tempIcon);
   const iconUrl = `http://openweathermap.org/img/wn/${json.tempIcon}@2x.png`;
   showAlert("");
   document.querySelector("#weather").classList.add("show");
@@ -69,4 +70,13 @@ function showInfo(json) {
 
 function showAlert(msg) {
   document.querySelector("#alert").innerHTML = msg;
+}
+
+function isday(isday) {
+  const color = document.getElementById("temp");
+  if (isday[2] === "d") {
+    color.style.backgroundColor = "#0284c7";
+  } else {
+    color.style.backgroundColor = "#041773";
+  }
 }

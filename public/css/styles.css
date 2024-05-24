@@ -12,11 +12,12 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
+  background: rgb(17, 12, 109);
+  background: linear-gradient(
+    90deg,
+    rgba(17, 12, 109, 1) 0%,
+    rgba(44, 29, 101, 1) 0%,
+    rgba(52, 107, 118, 1) 100%
   );
 }
 

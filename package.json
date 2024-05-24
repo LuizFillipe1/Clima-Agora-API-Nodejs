@@ -1,7 +1,7 @@
 {
-  "name": "weatherstack",
+  "name": "clima-agora",
   "version": "1.0.0",
-  "description": "Consulta de previsões do tempo com a API weatherstack utilizando NodeJS e Docker",
+  "description": "Consulta de previsões do tempo com a API open weather utilizando NodeJS e Docker",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
@@ -10,10 +10,12 @@
   },
   "keywords": [
     "API",
-    "weatherstack",
+    "openweather",
     "previsao",
     "do",
     "tempo",
+    "Clima",
+    "Agora",
     "NodeJs"
   ],
   "author": "Luiz Fillipe Morais, Gustavo Brunetti, Gabriel Avelar e Thiago Souza",

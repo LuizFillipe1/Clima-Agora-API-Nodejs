@@ -1,121 +1,90 @@
-# ☀️ CLIMA AGORA - COMPASS UOL
+<h1 align="center"> ☀️ Clima Agora </h1>
 
-Projeto realizado para a avaliação da Sprint 2 e 3 do programa de bolsas da Compass UOL em Machine Learning com AWS.
+Avaliação das segunda e terceira sprints do programa de bolsas Compass UOL para formação em machine learning para AWS.
+***
 
-## Descrição
+![Clima Agora preview](https://github.com/GabrielAvelarbr/Testes/assets/117688731/5f70472c-2018-49df-b6e0-17a9c244e3de)
 
-Esta é uma API de clima que permite aos usuários obter as condições climáticas atuais de uma cidade específica. O projeto segue o padrão de arquitetura MVC (Model-View-Controller) para garantir uma estrutura organizada e de fácil manutenção. Além disso, inclui uma interface de usuário em HTML, CSS e JavaScript para interação com a API.
+## 🌐 Sobre o Projeto!
 
-## Estrutura do projeto
+Este projeto consiste em uma aplicação que permite aos usuários visualizar as condições climáticas de uma cidade específica, utilizando a API OpenWeather.
 
-```bash
-sprints-2-3-pb-aws-abril/
-├── src/
-│   ├── controllers/
-│   │   └── weatherController.js
-│   ├── routes/
-│   │   └── weatherRoutes.js
-│   ├── services/
-│   │   └── weatherService.js
-│   └── views/
-│       ├── layouts/
-│       │   └── main.handlebars
-│       └── index.handlebars
-├── public/
-│   ├── css/
-│   │   └── styles.css
-│   ├── js/
-│   │   └── script.js
-├── .dockerignore
-├── .gitignore
-├── Dockerfile
-├── README.md
-├── app.js
-├── docker-compose.yml
-├── package-lock.json
-└── package.json
+Ao acessar a aplicação, os usuários são recebidos com um campo de entrada onde podem digitar o nome da cidade desejada. Após inserir o nome da cidade e clicar no botão de busca, a aplicação fornece informações precisas sobre a temperatura atual, temperatura máxima e mínima, porcentagem de umidade e velocidade do vento na cidade digitada pelo usuário.
+
+## 📂 Estrutura do repositório
+
+- `public/`: Diretório que contém arquivos públicos estáticos.
+    - `css/`: Arquivos de estilização.
+    - `js/`: responsável pelo código JavaScript da interface do usuário.
+      
+- `src/`: Diretório que armazena o código-fonte do projeto.
+    - `controllers/`: Lida com a lógica de entrada/saída. Recebe as requisições HTTP, chama os serviços apropriados e envia as respostas.
+    - `routes/`:  Define a rota para obter as condições climáticas de diferentes cidades.
+    - `services/`: Contém a lógica para para a chamada da API open weather e processar os dados retornados.
+    - `views/`: Templates de visualização da aplicação.
+
+- `.dockerignore`: Lista de arquivos e diretórios que serão ignorados pelo Docker ao construir a imagem.
+- `.gitignore`: Lista de arquivos e diretórios que serão ignorados pelo Git.
+- `.prettierrc`: Arquivo de configuração para o Prettier, um formatador de código.
+- `Dockerfile`: Define a imagem Docker para o projeto, especificando como a aplicação deve ser construída.
+- `app.js`: Arquivo principal da aplicação, onde o servidor é configurado e iniciado.
+- `docker-compose.yml`: Arquivo de configuração do Docker Compose para definir e gerenciar múltiplos contêineres Docker.
+- `package-lock.json`: Arquivo que descreve a árvore exata de dependências instaladas.
+- `package.json`: Arquivo de configuração do npm que lista as dependências do projeto, scripts e outras informações de configuração.
+  
+## 🔧 Pré-requisitos
+
+`Node.js` ou `Docker`
 
 
-```
 
-## Desafio
+## 🚀 Como Usar 
 
-O desafio consiste em consumir uma API (Interface de Programação de Aplicação) em NodeJs e subir essa aplicação utilizando Docker para rodar dentro da AWS Cloud.
+1. Clone o Repositório:
+    ```bash
+    git clone https://github.com/Compass-pb-aws-2024-ABRIL/sprints-2-3-pb-aws-abril.git
+    ```
+2. Navegue até o diretório do projeto e Altere para a Branch "grupo-3":
+    ```bash
+    cd sprints-2-3-pb-aws-abril
+    git checkout grupo-3
+    ```
 
-## Autores
+- **Usando npm**
 
-- [@LuizFillipe1](https://www.github.com/LuizFillipe1)
-- [@GabrielAvelarbr](https://github.com/GabrielAvelarbr)
-- [@GustavoBrunetti](https://github.com/GustavoBrunetti)
-- [@thiagoesAdapti](https://github.com/thiagoesAdapti)
+3. Instale as dependências usando npm:
+    ```bash
+    npm install
+    ```
 
-## Pré-requisitos
+4. Execute a Aplicação:
+    ```bash
+    npm run dev
+    ```
+    
+5. Acesse a Aplicação:
+   ```bash
+   http://localhost:3000
+    ```
+- **Usando Docker**
 
-`Node.js`
-ou
-`Docker`
+3. Construa a Imagem Docker:
+    ```bash
+    docker build -t nome-da-imagem .
+    ```
 
-## Rodando localmente
-
-Clone o projeto
-
-```bash
-  git clone https://github.com/Compass-pb-aws-2024-ABRIL/sprints-2-3-pb-aws-abril.git
-```
-
-Entre no diretório do projeto
-
-```bash
-  cd sprints-2-3-pb-aws-abril
-```
-
-Altere a branch para a "grupo-3"
-
-```bash
-  git checkout grupo-3
-```
-
-Rode o Docker
-
-```bash
-  docker build -t openweatherApi/grupo-3 .
-  docker run -p 3000:3000 -d openweatherApi/grupo-3
-```
-
-Caso não tenha o Docker instalado, instale as dependências, e rode o projeto
-
-```bash
-  npm install
-  npm run dev
-```
-
-Acesse a aplicação pelo navegador digitando na URL
-
-```bash
-  http://localhost:3000/
-```
-
-## Funcionalidades
-
-- Obter condições climáticas atuais de uma cidade.
-- Suporte para múltiplas cidades.
-- Respostas em formato JSON.
-- Interface de usuário para interação.
-
-## Demonstração
-
-Em breve
-
-## Dificuldades
-
-Não foi encontrado nenhuma dificuldade, visto que já tenho conhecimento prévio do conteúdo aplicado.
-
-![Logo](https://media.licdn.com/dms/image/C4D16AQEZagpRn65NVA/profile-displaybackgroundimage-shrink_350_1400/0/1658868192287?e=1719446400&v=beta&t=xZ2h5lU1DEW_zGQOGbvSIpYZzjNYCd4ZNRBdMzsvops)
-
-## Lógica Utilizada 🧠
-
-#### Retorna todos os itens
-
-```
-  - O projeto Clima Agora é feito em NodeJs
-```
+4. Execute o Contêiner Docker:
+    ```bash
+    docker run -d -p 3000:3000 nome-da-imagem
+    ```
+    
+5. Acesse a Aplicação:
+   ```bash
+   http://localhost:3000
+    ```
+   
+## 👨‍💻 Autores
+- [Luiz Fillipe Morais](https://github.com/LuizFillipe1)
+- [Gabriel Avelar](https://github.com/GabrielAvelarbr)
+- [Gustavo Brunetti](https://github.com/GustavoBrunetti)
+- [Thiago Figueiredo](https://github.com/ThiagoesAdapti)
