@@ -89,8 +89,5 @@ Diagrama de arquitetura da aplicação na AWS.
 - Lidar com as limitações impostas pela API OpenWeather.
 - Realizar o deploy da aplicação na AWS.  
   
-## 👨‍💻 Autores
+## 👨‍💻 Autor
 - [Luiz Fillipe Morais](https://github.com/LuizFillipe1)
-- [Gabriel Avelar](https://github.com/GabrielAvelarbr)
-- [Gustavo Brunetti](https://github.com/GustavoBrunetti)
-- [Thiago Figueiredo](https://github.com/ThiagoesAdapti)
