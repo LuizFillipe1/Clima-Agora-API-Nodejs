@@ -77,6 +77,6 @@ function isday(isday) {
   if (isday[2] === "d") {
     color.style.backgroundColor = "#0284c7";
   } else {
-    color.style.backgroundColor = "#041773";
+    color.style.backgroundColor = "#000000";
   }
 }

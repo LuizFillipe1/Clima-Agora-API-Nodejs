@@ -3,7 +3,7 @@
 Avaliação das segunda e terceira sprints do programa de bolsas Compass UOL para formação em machine learning para AWS.
 ***
 
-![Clima Agora preview](https://github.com/GabrielAvelarbr/Testes/assets/117688731/5f70472c-2018-49df-b6e0-17a9c244e3de)
+![Clima-Agora-preview](https://github.com/Compass-pb-aws-2024-ABRIL/sprints-2-3-pb-aws-abril/assets/117688731/85156d61-2f54-4897-871b-da43d95042dd)
 
 ## 🌐 Sobre o Projeto!
 
@@ -11,7 +11,7 @@ Este projeto consiste em uma aplicação que permite aos usuários visualizar as
 
 Ao acessar a aplicação, os usuários são recebidos com um campo de entrada onde podem digitar o nome da cidade desejada. Após inserir o nome da cidade e clicar no botão de busca, a aplicação fornece informações precisas sobre a temperatura atual, temperatura máxima e mínima, porcentagem de umidade e velocidade do vento na cidade digitada pelo usuário.
 
-## 📂 Estrutura do repositório
+## 📂 Estrutura do Repositório
 
 - `public/`: Diretório que contém arquivos públicos estáticos.
     - `css/`: Arquivos de estilização.
@@ -35,8 +35,6 @@ Ao acessar a aplicação, os usuários são recebidos com um campo de entrada on
 ## 🔧 Pré-requisitos
 
 `Node.js` ou `Docker`
-
-
 
 ## 🚀 Como Usar 
 
@@ -73,7 +71,7 @@ Ao acessar a aplicação, os usuários são recebidos com um campo de entrada on
     docker build -t nome-da-imagem .
     ```
 
-4. Execute o Contêiner Docker:
+4. Execute o Container Docker:
     ```bash
     docker run -d -p 3000:3000 nome-da-imagem
     ```
@@ -82,7 +80,15 @@ Ao acessar a aplicação, os usuários são recebidos com um campo de entrada on
    ```bash
    http://localhost:3000
     ```
-   
+## Diagrama de Arquitetura AWS
+Diagrama de arquitetura da aplicação na AWS.
+
+![AWS ECS Weather api Architecture (4)](https://github.com/GabrielAvelarbr/Testes/assets/117688731/3eb61680-1a0a-4466-a216-a97f229f8a3e)
+
+## ❌ Dificuldades
+- Lidar com as limitações impostas pela API OpenWeather.
+- Realizar o deploy da aplicação na AWS.  
+  
 ## 👨‍💻 Autores
 - [Luiz Fillipe Morais](https://github.com/LuizFillipe1)
 - [Gabriel Avelar](https://github.com/GabrielAvelarbr)
