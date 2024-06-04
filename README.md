@@ -3,7 +3,9 @@
 Avaliação das segunda e terceira sprints do programa de bolsas Compass UOL para formação em machine learning para AWS.
 ***
 
-![Clima-Agora-preview](https://github.com/Compass-pb-aws-2024-ABRIL/sprints-2-3-pb-aws-abril/assets/117688731/85156d61-2f54-4897-871b-da43d95042dd)
+<p align="center">
+  <img src="https://github.com/LuizFillipe1/Clima-Agora-API-Nodejs/blob/main/public/gif/clima-agora.gif" alt="Clima agora" />
+</p>
 
 ## 🌐 Sobre o Projeto!
 
