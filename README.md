@@ -1,8 +1,5 @@
 <h1 align="center"> ☀️ Clima Agora </h1>
 
-Avaliação das segunda e terceira sprints do programa de bolsas Compass UOL para formação em machine learning para AWS.
-***
-
 <p align="center">
   <img src="https://github.com/LuizFillipe1/Clima-Agora-API-Nodejs/blob/main/public/gif/clima-agora.gif" alt="Clima agora" />
 </p>
