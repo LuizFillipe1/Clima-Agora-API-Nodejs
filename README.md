@@ -39,12 +39,7 @@ Ao acessar a aplicação, os usuários são recebidos com um campo de entrada on
 
 1. Clone o Repositório:
     ```bash
-    git clone https://github.com/Compass-pb-aws-2024-ABRIL/sprints-2-3-pb-aws-abril.git
-    ```
-2. Navegue até o diretório do projeto e Altere para a Branch "grupo-3":
-    ```bash
-    cd sprints-2-3-pb-aws-abril
-    git checkout grupo-3
+    git clone https://github.com/LuizFillipe1/Clima-Agora-API-Nodejs.git
     ```
 
 - **Usando npm**
@@ -82,7 +77,7 @@ Ao acessar a aplicação, os usuários são recebidos com um campo de entrada on
 ## Diagrama de Arquitetura AWS
 Diagrama de arquitetura da aplicação na AWS.
 
-![AWS ECS Weather api Architecture (4)](https://github.com/GabrielAvelarbr/Testes/assets/117688731/3eb61680-1a0a-4466-a216-a97f229f8a3e)
+![AWS_ECS_Weather_api_Architecture](./public/img/AWS_ECS_Weather_api_Architecture.jpg)
 
 ## ❌ Dificuldades
 - Lidar com as limitações impostas pela API OpenWeather.
